@@ -44,6 +44,10 @@ body{
   outline: 0;
 }
 
+.leftSide input:disabled{
+  opacity: .5;
+}
+
 .leftSide button{
   background-color: #3d3d3d;
   color: white;
@@ -60,6 +64,12 @@ body{
 .leftSide button:hover{
   background-color: #080808;
 }
+
+
+.leftSide button:disabled{
+  background-color: #a7a7a7;
+}
+
 
 .rightSide{
   flex: 1;

@@ -47,6 +47,7 @@ function App() {
             value={heightField > 0 ? heightField : ""}
             // o e.target.value retorna uma string, por isso usamos o parseFloat
             onChange={(e) => setHeightField(parseFloat(e.target.value))}
+            disabled={toShow ? true : false}
           />
 
           <input
@@ -54,10 +55,11 @@ function App() {
             placeholder="digite seu peso"
             value={weightField > 0 ? weightField : ""}
             // o e.target.value retorna uma string, por isso usamos o parseFloat
+            disabled={toShow ? true : false}
             onChange={(e) => setWeightField(parseFloat(e.target.value))}
           />
 
-          <button onClick={handleCalculateButton}>Calcular</button>
+          <button onClick={handleCalculateButton} disabled={toShow ? true : false} >Calcular</button>
         </div>
         <div className={styles.rightSide}>
           {!toShow && (
