@@ -78,3 +78,26 @@ body{
   flex: 1;
   display: flex;
 }
+
+.rightArrow{
+  position: absolute;
+  background-color: #227c9d;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px;
+  margin-top: 145px;
+  transition: all ease .2s;
+}
+
+.rightArrow:hover{
+  background-color: #1c6a86;
+}
+
+
+
+
+
